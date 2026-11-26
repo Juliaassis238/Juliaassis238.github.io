@@ -69,8 +69,9 @@
     padding-bottom: 76px;
     color: #f7f5ef;
     background:
-      radial-gradient(ellipse 54% 57% at 72% 47%, rgba(32, 120, 100, .25), transparent 74%),
-      radial-gradient(ellipse 90% 38% at 51% 100%, rgba(8, 68, 59, .42), transparent 76%),
+      radial-gradient(ellipse 56% 62% at 71% 43%, rgba(44, 167, 136, .34), transparent 73%),
+      radial-gradient(ellipse 27% 35% at 78% 28%, rgba(238, 138, 112, .2), transparent 74%),
+      radial-gradient(ellipse 90% 38% at 51% 100%, rgba(8, 68, 59, .46), transparent 76%),
       linear-gradient(180deg, #061918 0%, #071f1d 52%, #061716 100%);
     isolation: isolate;
   }
@@ -94,7 +95,7 @@
     position: absolute;
     display: block;
     border-radius: 50%;
-    filter: blur(46px);
+    filter: blur(38px) saturate(1.12);
     mix-blend-mode: screen;
     transform-origin: center;
     will-change: transform;
@@ -104,8 +105,8 @@
     height: 66%;
     top: 0;
     right: -8%;
-    opacity: .62;
-    background: linear-gradient(118deg, transparent 8%, rgba(17, 97, 80, .12) 26%, rgba(91, 194, 155, .5) 42%, rgba(155, 235, 192, .28) 53%, rgba(250, 163, 126, .2) 66%, transparent 84%);
+    opacity: .76;
+    background: linear-gradient(118deg, transparent 8%, rgba(17, 97, 80, .16) 26%, rgba(91, 211, 167, .62) 42%, rgba(178, 247, 205, .38) 53%, rgba(250, 153, 120, .3) 66%, transparent 84%);
     animation: aurora-drift-one 19s ease-in-out infinite alternate;
   }
   .aurora-two {
@@ -113,8 +114,8 @@
     height: 52%;
     top: 8%;
     left: 24%;
-    opacity: .43;
-    background: linear-gradient(104deg, transparent 12%, rgba(81, 178, 151, .28) 35%, rgba(207, 244, 211, .2) 48%, rgba(230, 149, 122, .16) 60%, transparent 82%);
+    opacity: .58;
+    background: linear-gradient(104deg, transparent 12%, rgba(81, 196, 160, .38) 35%, rgba(207, 244, 211, .28) 48%, rgba(244, 154, 124, .23) 60%, transparent 82%);
     animation: aurora-drift-two 24s ease-in-out infinite alternate;
   }
   .star-field {
@@ -216,14 +217,14 @@
     width: 510px;
     height: 174px;
     opacity: .76;
-    animation: orbit-spin-one 34s linear infinite;
+    animation: orbit-spin-one 27s linear infinite;
   }
   .orbit-two {
     width: 620px;
     height: 222px;
     border-color: rgba(244, 180, 148, .48);
     opacity: .72;
-    animation: orbit-spin-two 48s linear infinite reverse;
+    animation: orbit-spin-two 38s linear infinite reverse;
   }
   .hero-orb {
     z-index: 2;
@@ -232,9 +233,9 @@
     overflow: hidden;
     background:
       radial-gradient(circle at 27% 23%, rgba(255, 255, 248, .94) 0 2.2%, rgba(255, 255, 248, .42) 4%, transparent 13%),
-      radial-gradient(ellipse at 70% 36%, rgba(255, 178, 144, .78) 0 4%, transparent 25%),
-      radial-gradient(ellipse at 44% 61%, rgba(172, 255, 231, .85) 0 3%, transparent 27%),
-      radial-gradient(circle at 34% 30%, #d5f5e8 0%, #93d9c3 25%, #408e7b 53%, #145044 79%, #092321 100%);
+      radial-gradient(ellipse at 70% 36%, rgba(255, 165, 135, .86) 0 4%, transparent 27%),
+      radial-gradient(ellipse at 44% 61%, rgba(172, 255, 231, .94) 0 3%, transparent 29%),
+      radial-gradient(circle at 34% 30%, #e0fff1 0%, #9de5cc 25%, #3d9b82 53%, #145044 79%, #092321 100%);
     box-shadow: inset -32px -40px 82px rgba(0, 0, 0, .42), inset 14px 12px 36px rgba(255, 255, 255, .23), 0 32px 90px rgba(53, 194, 155, .27), 0 0 48px rgba(91, 222, 184, .15);
     animation: orb-float 8s ease-in-out infinite;
   }
@@ -278,7 +279,7 @@
     top: 49%;
     height: 19%;
     opacity: .66;
-    transform: rotate(28deg) scale(.84);
+    transform: rotate(-10deg) scale(.84);
     animation-delay: -4s;
     background: linear-gradient(95deg, transparent 12%, rgba(103, 219, 190, .12) 26%, rgba(213, 255, 240, .78) 46%, rgba(255, 177, 143, .66) 57%, transparent 82%);
   }
@@ -362,7 +363,7 @@
     .announcement { font-size: 9px; }
     .hero { padding-top: 48px; padding-bottom: 74px; }
     .hero h1 { font-size: clamp(52px, 14vw, 60px); line-height: .93; }
-    .hero-art { height: 335px; margin-top: 12px; }
+    .hero-art { height: 300px; margin-top: -18px; }
     .hero-orb { width: 240px; height: 240px; }
     .orb-label { left: 33px; bottom: 31px; }
     .orb-label b { font-size: 18px; }
@@ -390,9 +391,9 @@
     .trust-strip span { font-size: 9px; }
   }
 
-  .orbit-one, .orbit-two { border-width: 1.25px; }
-  .orbit-one { border-color: rgba(190, 255, 237, .82); }
-  .orbit-two { border-color: rgba(255, 204, 178, .74); }
+  .orbit-one, .orbit-two { border-width: 1.5px; }
+  .orbit-one { border-color: rgba(190, 255, 237, .94); }
+  .orbit-two { border-color: rgba(255, 204, 178, .88); }
   .orbit::after {
     content: "";
     position: absolute;
